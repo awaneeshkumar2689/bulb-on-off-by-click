@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head><title>favicon</title><link rel="icon" type="image/x-icon" href="C:\xampp\htdocs\php\unified\favicon.ico"></head><body>
+<body>
+
+<h1>Get Electricity</h1>
+<p>On off bulb by button</p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "offbulb.png"
+  } else {
+    pic = "onbulb.png"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="offbulb.png" width="400" height="480">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+</body>
+</html>
